@@ -20,6 +20,9 @@ Route::get('/about', function () {
     return view('welcome');
 });
 
+Route::get('/contact', function () {
+    return view('contact');
+});
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
